@@ -4,6 +4,7 @@ The task is divided into 2 main parts:
 2. Training student's model to Detect Vehicles
 
 All tasks are performed in a single Python notebook: `aerial_vehicle_detection.ipynb`.
+****!!!! TO RUN LOCALLY FROM SCRATCH, PLEASE, UNZIP `raw_data.zip` TO THIS FOLDER !!!!****
 
 The notebook can be opened and reviewed together with my comments.
 
