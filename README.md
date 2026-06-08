@@ -11,8 +11,7 @@ The trained model weights are stored at:
 `./runs/detect/runs/vehicle_sahi640/weights/best.pt`
 
 The resulting visualizations are saved in:
-`out_train_viz`
-
+`out_train_viz`. Due to large files, all videos uploaded here : [See here](https://drive.google.com/drive/folders/1PAHuhBpzpNyz41mdzvgXJzJA1VL7DVzP?usp=sharing)
 ## Auto Labeling Data
 For Auto Labeling, I decided to use YOLO 26X model and use [2, 3, 5, 7] classes that represents:
 car, motorcycle, bus, and truck that used as single class vehicle in our application.
