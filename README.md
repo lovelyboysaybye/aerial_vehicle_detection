@@ -47,39 +47,39 @@ Trained model than evaluated and generate video visualizations. You can find the
 ### Testing (Evaluation) part:
 #### EVAL (held-out) :: ALL VIDEOS (aggregate)
 
-| Metric                       | 0-200  | 200-400 |
-|-----------------------------|-------:|--------:|
-| Detection rate TP/(TP+FN)   | 0.328  | 0.123   |
-| Precision TP/(TP+FP)        | 0.213  | 0.955   |
-| False alarms / min          | 3124.63 | 79.47   |
-| Time to first detection (s) | 1.65   | 0.00    |
+| Metric                       |   0-200 | 200-400 |
+|-----------------------------|--------:|--------:|
+| Detection rate TP/(TP+FN)   |   0.302 |   0.410 |
+| Precision TP/(TP+FP)        |   0.198 |   0.951 |
+| False alarms / min          | 3160.81 |  288.81 |
+| Time to first detection (s) |    3.24 |    0.03 |
 
-**mAP@0.5 across both bands:** 0.1602  
+**mAP@0.5 across both bands:** 0.3964  
 **Videos:** 2  
 **Frames:** 2784
 
 **Counts:**  
-- `0-200`: TP=1309, FP=4836, FN=2682  
-- `200-400`: TP=2609, FP=123, FN=18669
+- `0-200`: TP=1205, FP=4892, FN=2786  
+- `200-400`: TP=8722, FP=447, FN=12556
 
 ### Training Part:
 
 #### TRAIN :: ALL VIDEOS (aggregate)
 
-| Metric                       | 0-200    | 200-400 |
+| Metric                       |    0-200 | 200-400 |
 |-----------------------------|---------:|--------:|
-| Detection rate TP/(TP+FN)   | 0.884    | 0.870   |
-| Precision TP/(TP+FP)        | 0.588    | 0.609   |
-| False alarms / min          | 10568.50 | 4708.43 |
-| Time to first detection (s) | 0.17     | 0.37    |
+| Detection rate TP/(TP+FN)   |    0.856 |   0.781 |
+| Precision TP/(TP+FP)        |    0.573 |   0.678 |
+| False alarms / min          | 10861.14 | 3126.33 |
+| Time to first detection (s) |     0.16 |    0.37 |
 
-**mAP@0.5 across both bands:** 0.7763  
+**mAP@0.5 across both bands:** 0.7373  
 **Videos:** 4  
 **Frames:** 2465
 
 **Counts:**  
-- `0-200`: TP=23056, FP=16179, FN=3015  
-- `200-400`: TP=11225, FP=7208, FN=1674
+- `0-200`: TP=22303, FP=16627, FN=3768  
+- `200-400`: TP=10073, FP=4786, FN=2826
 
 ## Notes:
 Interesting, that added second eval clip `12897527_1920_1080_30fps.mp4` works similarly as training video `8968356-hd_1920_1080_30fps.mp4`. At the begging of `12897527_1920_1080_30fps.mp4`, 
